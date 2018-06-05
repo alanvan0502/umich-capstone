@@ -1,11 +1,16 @@
+/* Style the Font for the whole page */
+body{
+  font-family: 'Assistant', sans-serif;
+}
+
 /* Style the header - Small Screen */
 header{
   width: 100%;
 }
 
 .img-container{
-  width: 30%;
-  min-width: 120px;
+  width: 40%;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +25,7 @@ header{
 
 
 /* Style the Nav Bar - Small Screen */
+/* __________________________________ */
 
 #navbarsExample10{
   text-align: center;
@@ -27,6 +33,10 @@ header{
 
 .navbar{
   justify-content: center;
+}
+
+.nav-link{
+  font-size: 1.5em;
 }
 
 .navbar-toggler{
@@ -44,16 +54,16 @@ header{
 
   .img-container{
     width: 100%;
-    height: 229px;
+    height: 400px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
     margin: 0;
   }
 
   .img-container img{
-    height: 229px;
+    height: 400px;
   }
 
   #nav1{
@@ -62,14 +72,102 @@ header{
 
   #nav2{
     display: block;
-    font-size: 1.25em;
-    margin-right: 50px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2em;
   }
 
   #nav2 a{
     display: inline-block;
-    margin: 10px;
+    margin: 0.5em;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 9%;
+    background-color: #561a04;
+    opacity: 0.6;
+    text-align: center;
+    padding: 0.5%;
+    width: 8%;
+    font-size: 1em;
   }
 
+  #nav2 a:hover {
+	background: #ad6a07;
+	color: #ffffff;
+  }
 
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  right: 20%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 40rem;
+  background-color: #dcd3d0;
+}
+.carousel-item > img {
+  position: static;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  background-size: cover;
+}
+
+/* Style the Content Section */
+/* __________________________________ */
+#mission, #visitUs{
+  display: block;
+  width: 100%;
+  padding-top: 0.8%;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5%;
+  color: rgba(70,50,42,0.97);
+  font-family: 'Courgette', cursive;
+}
+
+#mission p, #visitUs p{
+  font-family: 'Assistant', sans-serif;
+}
+
+#visitUs{
+  padding-bottom: 5%;
+  margin: 0;
+}
+
+#you{
+  font-style: italic;
+}
+
+i{
+  width: 2.5em;
+  color: rgba(70,50,42,0.97);
+}
+
+/* Style the Footer Section */
+/* __________________________________ */
+
+footer{
+  display: block;
+  margin: 0;
+  font-size: 0.75em;
+  text-align: center;
+  background-color: #561a04;
+  opacity: 0.4;
+  color: #ffffff;
 }
