@@ -49,9 +49,78 @@ header{
   display: none;
 }
 
-/* Style the header - Large Screen */
-@media only screen and (min-width: 768px){
+/* Style carousel */
+#myCarousel2{
+  display: block;
+}
 
+#myCarousel, #myCarousel1{
+  display: none;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  right: 20%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 40rem;
+  background-color: #dcd3d0;
+}
+.carousel-item > img {
+  position: static;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  background-size: cover;
+}
+
+/* Style the header and carousel for min width 600px and max with 1196px */
+/*__________________________________*/
+@media only screen and (min-width: 600px) and (max-width: 1196px){
+  /* Style carousel */
+  #myCarousel1{
+    display: block;
+  }
+
+  #myCarousel, #myCarousel2{
+    display: none;
+  }
+
+  /* Carousel base class */
+  .carousel {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    right: 20%;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 40rem;
+    background-color: #dcd3d0;
+  }
+  .carousel-item > img {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    background-size: cover;
+  }
+
+  /* Style header */
   .img-container{
     width: 100%;
     height: 400px;
@@ -82,49 +151,108 @@ header{
     margin: 0.5em;
     text-decoration: none;
     color: #ffffff;
-    border-radius: 9%;
+    border-radius: 60%;
     background-color: #561a04;
     opacity: 0.6;
     text-align: center;
     padding: 0.5%;
     width: 8%;
+    min-width: 90px;
     font-size: 1em;
+    box-sizing: content-box;
   }
 
   #nav2 a:hover {
 	background: #ad6a07;
 	color: #ffffff;
   }
-
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+/* Style the header and carousel for screens with min-width more than 1196px */
+/*  __________________________________ */
+@media only screen and (min-width: 1196px){
+  #myCarousel{
+    display: block;
+  }
 
-/* Carousel base class */
-.carousel {
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-  right: 20%;
+  #myCarousel1, #myCarousel2{
+    display: none;
+  }
+
+  /* Carousel base class */
+  .carousel {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    right: 20%;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 40rem;
+    background-color: #dcd3d0;
+  }
+  .carousel-item > img {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    background-size: cover;
+  }
+
+  /* Style header */
+  .img-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  .img-container img{
+    height: 400px;
+  }
+
+  #nav1{
+    display: none;
+  }
+
+  #nav2{
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  #nav2 a{
+    display: inline-block;
+    margin: 0.5em;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 60%;
+    background-color: #561a04;
+    opacity: 0.6;
+    text-align: center;
+    padding: 0.5%;
+    width: 8%;
+    min-width: 90px;
+    font-size: 1em;
+    box-sizing: content-box;
+  }
+
+  #nav2 a:hover {
+  background: #ad6a07;
+  color: #ffffff;
+  }
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 40rem;
-  background-color: #dcd3d0;
-}
-.carousel-item > img {
-  position: static;
-  display: block;
-  margin: 0 auto;
-  top: 0;
-  background-size: cover;
-}
+
 
 /* Style the Content Section */
 /* __________________________________ */
