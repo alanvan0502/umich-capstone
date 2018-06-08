@@ -156,9 +156,9 @@ header{
 /* Style the map */
 
 #map {
-  height: 400px;  /* The height is 400 pixels */
+  height: 380px;  /* The height is 400 pixels */
   width: 70%;  /* The width is the width of the web page */
-  margin: 80px auto;
+  margin: 70px auto;
  }
 
 /* Style the contact form */
@@ -232,6 +232,11 @@ i{
 /* __________________________________ */
 
 footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 0.6em;
+  width: 100%;
   display: block;
   margin: 0;
   font-size: 0.75em;
