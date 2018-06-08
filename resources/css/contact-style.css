@@ -1,0 +1,242 @@
+/* Style the Font for the whole page */
+body{
+  font-family: 'Assistant', sans-serif;
+}
+
+/* Style the header - Small Screen */
+header{
+  width: 100%;
+}
+
+.img-container{
+  width: 40%;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.img-container img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Style the Nav Bar - Small Screen */
+/* __________________________________ */
+
+#navbarsExample10{
+  text-align: center;
+}
+
+.navbar{
+  justify-content: center;
+}
+
+.nav-link{
+  font-size: 1.5em;
+}
+
+.navbar-toggler{
+  -ms-transform: scale(0.75, 0.75); /* IE 9 */
+  -webkit-transform: scale(0.75, 0.75); /* Safari */
+  transform: scale(0.75, 0.75);
+}
+
+#nav2{
+  display: none;
+}
+
+/* Style the header and carousel for min width 600px and max with 1196px */
+/*__________________________________*/
+@media only screen and (min-width: 600px) and (max-width: 1196px){
+
+  /* Style header */
+  .img-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  .img-container img{
+    height: 400px;
+  }
+
+  #nav1{
+    display: none;
+  }
+
+  #nav2{
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  #nav2 a{
+    display: inline-block;
+    margin: 0.5em;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 60%;
+    background-color: #561a04;
+    opacity: 0.6;
+    text-align: center;
+    padding: 0.5%;
+    width: 8%;
+    min-width: 90px;
+    font-size: 1em;
+    box-sizing: content-box;
+  }
+
+  #nav2 a:hover {
+	background: #ad6a07;
+	color: #ffffff;
+  }
+}
+
+/* Style the header and carousel for screens with min-width more than 1196px */
+/*  __________________________________ */
+@media only screen and (min-width: 1196px){
+
+  /* Style header */
+  .img-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  .img-container img{
+    height: 400px;
+  }
+
+  #nav1{
+    display: none;
+  }
+
+  #nav2{
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  #nav2 a{
+    display: inline-block;
+    margin: 0.5em;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 60%;
+    background-color: #561a04;
+    opacity: 0.6;
+    text-align: center;
+    padding: 0.5%;
+    width: 8%;
+    min-width: 90px;
+    font-size: 1em;
+    box-sizing: content-box;
+  }
+
+  #nav2 a:hover {
+  background: #ad6a07;
+  color: #ffffff;
+  }
+}
+
+/* Style the map */
+
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 70%;  /* The width is the width of the web page */
+  margin: 80px auto;
+ }
+
+/* Style the contact form */
+input[type=text], select, textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 2px;
+   margin-bottom: 16px;
+   resize: vertical;
+}
+
+input[type=submit] {
+   background-color: #561a04;
+   color: white;
+   padding: 5px 20px;
+   border: none;
+   border-radius: 2px;
+   cursor: pointer;
+   display: block;
+   margin: 0 auto;
+}
+
+input[type=submit]:hover {
+   background-color: #d4440f;
+}
+
+.container {
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+   width: 70%;
+}
+
+/* Style the Visit Us Section */
+/* __________________________________ */
+#menu, #visitUs{
+  display: block;
+  width: 100%;
+  padding-top: 0.8%;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin: 4% auto;
+  text-align: center;
+  margin-bottom: 5%;
+  color: rgba(70,50,42,0.97);
+  font-family: 'Courgette', cursive;
+}
+
+#menu p, #visitUs p{
+  font-family: 'Assistant', sans-serif;
+}
+
+#visitUs{
+  padding-bottom: 5%;
+  margin-top: 6em;
+}
+
+#you{
+  font-style: italic;
+}
+
+i{
+  width: 2.5em;
+  color: rgba(70,50,42,0.97);
+}
+
+/* Style the Footer Section */
+/* __________________________________ */
+
+footer{
+  display: block;
+  margin: 0;
+  font-size: 0.75em;
+  text-align: center;
+  background-color: #561a04;
+  opacity: 0.4;
+  color: #ffffff;
+}
